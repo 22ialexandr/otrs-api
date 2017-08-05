@@ -20,6 +20,7 @@
         "issues": "https://github.com/Laupe/otrs-api/issues"
     },
     "type": "library",
+    "minimum-stability": "dev",
     "autoload": {
         "psr-4": {
             "Laupe\\": "src/Laupe/"
