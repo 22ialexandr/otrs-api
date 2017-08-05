@@ -1,5 +1,5 @@
 {
-    "name": "Laupe/otrs-api",
+    "name": "laupe/otrs-api",
     "description": "OTRS API SOAP Web Service Client for PHP",
     "keywords": [
         "otrs",
