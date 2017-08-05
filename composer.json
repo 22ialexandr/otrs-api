@@ -1,12 +1,27 @@
 {
-    "name": "suqld/otrs-api",
+    "name": "Laupe/otrs-api",
+    "description": "OTRS API SOAP Web Service Client for PHP",
+    "keywords": [
+        "otrs",
+        "api",
+        "soap"
+    ],
+    "license": "GPL-3.0",
+    "authors": [
+        {
+            "name": "Pavel Laupe Dvorak",
+            "email": "pavel@laupe.me"
+        }
+    ],
+    "support": {
+        "email": "support@laupe.cz",
+        "issues": "https://github.com/Laupe/otrs-api/issues"
+    },
     "type": "library",
-    "description": "OTRS API SOAP Library",
     "minimum-stability": "stable",
-    "license": "LGPL-3.0",
-    "autoload" : {
+    "autoload": {
         "psr-4": {
-            "SUQLD\\": "src/SUQLD/"
+            "Laupe\\": "src/Laupe/"
         }
     }
 }

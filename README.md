@@ -1,4 +1,8 @@
-otrs
-====
+OTRS API SOAP Web Service Client for PHP
+========================================
 
-OTRS Soap Library
+forked from https://github.com/suqld/otrs
+
+I'm working on it
+
+Laupe

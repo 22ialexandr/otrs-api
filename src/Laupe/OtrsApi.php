@@ -1,6 +1,6 @@
 <?php
 
-namespace SUQLD;
+namespace Laupe;
 
 class OtrsApi
 {
@@ -98,7 +98,7 @@ class OtrsApi
         $state = 'new',
         $ownerID = 1,
         $userID = 1
-        )
+    )
     {
         if (strlen(trim($title)) == 0) {
             throw new \Exception('Need a title. Title is empty');
@@ -166,7 +166,7 @@ class OtrsApi
             throw new \Exception('TicketID needs to be an integer');
         }
 
-        $request =  [
+        $request = [
             "TicketObject", "ArticleCreate",
             "TicketID", $ticketID,
             "ArticleType", $articleType,
@@ -178,7 +178,7 @@ class OtrsApi
             "Body", $body,
             "UserID", $userID,
 
-            ];
+        ];
 
         switch ($articleType) {
             case 'note-internal':
@@ -193,7 +193,7 @@ class OtrsApi
                     "AutoResponseType", 'auto reply',
                     "OrigHeader", [
                         'From' => $from,
-                        'To' =>  'Postmaster',
+                        'To' => 'Postmaster',
                         'Subject' => $subject,
                         'Body' => $body,
                     ]
@@ -214,7 +214,7 @@ class OtrsApi
     {
         $request = array(
             "TicketObject", "ArticleWriteAttachment",
-            "Content", new \SoapVar(file_get_contents($filePath),XSD_BASE64BINARY, 'xsd:base64Binary'),
+            "Content", new \SoapVar(file_get_contents($filePath), XSD_BASE64BINARY, 'xsd:base64Binary'),
             "ContentType", $mimeType,
             "Filename", $fileName,
             "ArticleID", $articleID,
@@ -262,7 +262,7 @@ class OtrsApi
     public function getTicket($TicketID, $Extended = false)
     {
         $request = [
-            'TicketObject' , 'TicketGet',
+            'TicketObject', 'TicketGet',
             'TicketID', $TicketID,
             'Extended', (int)$Extended,
         ];
