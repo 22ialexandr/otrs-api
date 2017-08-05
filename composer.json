@@ -10,7 +10,9 @@
     "authors": [
         {
             "name": "Pavel Laupe Dvorak",
-            "email": "pavel@laupe.me"
+            "email": "pavel@laupe.me",
+            "homepage": "https://www.laupe.me",
+            "role": "Developer"
         }
     ],
     "support": {
@@ -18,7 +20,6 @@
         "issues": "https://github.com/Laupe/otrs-api/issues"
     },
     "type": "library",
-    "minimum-stability": "stable",
     "autoload": {
         "psr-4": {
             "Laupe\\": "src/Laupe/"
